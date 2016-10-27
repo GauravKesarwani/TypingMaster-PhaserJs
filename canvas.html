@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Example of analog clock using HTML5 canvas</title>
+</head>
+<body>
+  <canvas id="canvas" width="400" height="400" style="background-color: #333">
+    
+  </canvas>
+
+  <script>
+    var canvas,
+      ctx,
+      radius;
+    canvas = document.getElementById("canvas");
+    ctx = canvas.getContext("2d");
+    radius = canvas.height / 2 * .90;
+    ctx.translate(radius, radius);
+    drawClock();
+
+
+    function drawClock() {
+      ctx.arc(0, 0, radius, 0, 2*Math.PI);
+      ctx.fillStyle = "white";
+      ctx.fill();
+    }
+  </script>
+</body>
+</html>
