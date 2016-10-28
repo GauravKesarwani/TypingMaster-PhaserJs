@@ -11,5 +11,6 @@ boot.prototype = {
 
   create: function() {
     this.game.state.start('Home');
+    //this.game.state.start('ScoreKeeper');
   }
 }

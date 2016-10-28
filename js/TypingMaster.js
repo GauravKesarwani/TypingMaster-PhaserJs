@@ -7,6 +7,8 @@
   game.state.add('Play', play);
   game.state.add('Instructions', instructions);
   game.state.add('Settings', settings);
+  game.state.add('ScoreKeeper', ScoreKeeper);
+  game.state.add('GameOver',  GameOver);
   //game.state.add('Exit', Exit);
 
   game.state.start('Boot');
